@@ -70,8 +70,8 @@ stages:
   dependsOn: Build
   jobs:
   - deployment: Deploy
-  pool:
-    vmImage: 'ubuntu-16.04'
+    pool:
+      vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
